@@ -1,0 +1,537 @@
+@import "all.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, span, p{
+    font-weight: 600;
+    margin: 0;
+}
+section{
+    padding: 50px 0;
+}
+p{
+    color: #999999;
+}
+.section-center-heading h6{
+    text-transform: uppercase;
+    color: #0099cc;
+}
+.section-center-heading span{
+    display: inline-block;
+    height: 3px;
+    width: 50px;
+    position: relative;
+}
+.section-center-heading span::before{
+   content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0099cc;
+    transition: .5s all ease-in-out;
+}
+.section-center-heading span::after{
+   content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0099cc;
+    transition: .5s all ease-in-out;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+    background: rgba(40, 40, 40, 0.9);
+}
+
+.navbar .navbar-brand{
+    color: #ffffff;
+}
+
+.navbar .main-menu .nav-item{
+    padding-left: 20px;
+}
+.navbar .main-menu .nav-link{
+    color: #ffffff;
+    position: relative;
+    padding: 0;
+}
+.navbar .main-menu .nav-link:hover{
+    color: #ffffff;
+}
+.navbar .main-menu .nav-link:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background-color: #0099cc;
+    transition: .4s all ease-in-out;
+}
+.navbar .main-menu .nav-link:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    right: 0;
+    bottom: -7px;
+    background-color: #0099cc;
+    transition: .4s all ease-in-out;
+}
+.navbar .main-menu .nav-link:hover::before{
+    width: 45%;
+}
+.navbar .main-menu .nav-link:hover::after{
+    width: 45%;
+}
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 70vh;
+    background: url("../img/banner.png") top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#hero .hero_content span{
+    color: #0099cc;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#hero .hero_content h1{
+    color: #ffffff;
+    margin: 20px 0;
+}
+#hero .hero_content p{
+    margin-bottom: 50px;
+}
+#hero .hero_content .btn-download{
+    background-color: #0099cc;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+#hero .hero_content .btn-feature{
+    background-color: transparent;
+    border: 1px solid #999999;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+#hero .hero_content .btn-download:hover{
+    background-color: transparent;
+    border: 1px solid #999999;
+    color: #ffffff;
+}
+#hero .hero_content .btn-feature:hover{
+    background-color: #0099cc;
+    color: #ffffff;
+}
+
+#hero .banner-phone{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+#hero .banner-phone img{
+    width: 110%;
+}
+/*--------------------------------------------------------------------------------------------
+amazing_features starts
+----------------------------------------------------------------------------------------------*/
+.amazing_features{
+    text-align: center;
+}
+
+.amazing_features:hover .section-center-heading span::before, .amazing_features:hover .section-center-heading span::after{
+    width: 47%;
+}
+.amazing_features .features{
+    margin-top: 20px;
+}
+.amazing_features .features .features-content{
+    padding: 80px 20px;
+    transition: .3s all ease-in-out;
+}
+.amazing_features .features .features-content:hover{
+    background: #FFFFFF;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.amazing_features .features .icon{
+    border: 1px solid #bebebe;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: auto;
+    font-size: 30px;
+    color: #0099cc;
+    margin-bottom: 20px;
+    transition: .5s all ease-in-out;
+}
+.amazing_features .features .features-content:hover .icon{
+    color: #ffffff;
+    background-color: #0099cc;
+}
+
+/*---------------------------------------------------------------
+beautiful_device
+-----------------------------------------------------------------*/
+.beautiful_device .device_content{
+    margin: auto;
+    overflow: hidden;
+}
+.beautiful_device ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.beautiful_device ul li{
+    color: #000000;
+    font-weight: 600;
+    line-height: 30px;
+}
+.beautiful_device .device-icon{
+    float: left;
+    width: 5%;
+    text-align: center;
+}
+.beautiful_device .device-icon-text{
+    float: right;
+    width: 93%;
+}
+.beautiful_device .device-icon li i{
+    color: #0099cc;
+}
+.beautiful_device p{
+    margin: 20px 0;
+}
+
+.beautiful_device:hover .section-center-heading span::before, .beautiful_device:hover .section-center-heading span::after{
+    width: 47%;
+}
+
+/*----------------------------------------------------------------
+Supper easy customize
+-------------------------------------------------------------------*/
+.super_easy{
+    background-color: rgba(214, 214, 214, 0.71);
+}
+.super_easy .device_content{
+    margin: auto;
+    overflow: hidden;
+}
+.super_easy:hover .section-center-heading span::before, .super_easy:hover .section-center-heading span::after{
+    width: 47%;
+}
+.super_easy p{
+    margin: 20px 0;
+}
+/*------------------------------------------------------------
+Testimonial
+-----------------------------------------------------------------*/
+.testimonial:hover .section-center-heading span::before, .testimonial:hover .section-center-heading span::after{
+    width: 47%;
+}
+.testimonial {
+    width: 100%;
+    height: 60vh;
+    background: url("../img/pricings_plans_banner.png") top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.testimonial .section-center-heading{
+    text-align: center;
+}
+.testimonial .section-center-heading h2{
+    color: #ffffff;
+}
+.testimonial .testimonial_slider{
+    padding: 70px 0;
+}
+.testimonial .testimonial_slider .item p{
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 20px;
+}
+.testimonial .testimonial_slider .item .testomonial-person{
+    overflow: hidden;
+}
+.testimonial .testimonial_slider .item .testomonial-person .image{
+    float: left;
+    width: 10%;
+}
+
+.testimonial .testimonial_slider .review{
+    float: right;
+    width: 85%;
+    margin-top: 10px;
+}
+.testimonial .testimonial_slider .review h6{
+    color: #ffffff;
+}
+.testimonial .testimonial_slider .owl-carousel .item{
+    margin-bottom: 100px;
+}
+
+/*-----------------------------------------------------------------
+add bar
+--------------------------------------------------------------------------*/
+.add_bar{
+    background-color: #000018;
+}
+.add_bar .add_bar_content{
+    overflow: hidden;
+}
+
+.add_bar .add_bar_content h1{
+    float: left;
+    width: 70%;
+    color: #ffffff;
+}
+.add_bar .add_bar_content h1 span{
+    color: #999999;
+    font-weight: normal;
+}
+
+.add_bar .add_bar_content .add_btn{
+    float: right;
+    /*width: 30%;*/
+}
+.add_bar .add_bar_content .add_btn .btn-download{
+    background-color: #0099cc;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: .5s ease;
+    margin-left: 10px;
+}
+.add_bar .add_bar_content .add_btn .btn-feature{
+    background-color: transparent;
+    border: 1px solid #999999;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+.add_bar .add_bar_content .add_btn .btn-download:hover{
+    background-color: transparent;
+    border: 1px solid ;
+    color: #ffffff;
+}
+.add_bar .add_bar_content .add_btn .btn-feature:hover{
+    background-color: #0099cc;
+    color: #ffffff;
+}
+
+/*------------------------------------------------------------
+Pricing
+-----------------------------------------------------------------*/
+.pricing .card{
+    text-align: center;
+    border: 1px solid #999999;
+
+}
+.pricing .card .card-header{
+    background: none;
+    padding: 20px 0;
+}
+
+.pricing .card .card-header h5{
+    font-size: 26px;
+    font-weight: 900;
+    transition: 0.3s all ease-in-out;
+    text-transform: uppercase;
+}
+.pricing .card .card-body{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-top: 0;
+}
+.pricing .card .card-body .price{
+    padding: 30px 0;
+    border-bottom: 1px solid #999999;
+    transition: 0.3s all ease-in-out;
+}
+.pricing .card .card-body .price h4{
+    font-size: 48px;
+    font-weight: 700;
+}
+.pricing .card .card-body .price h4 sup{
+    font-size: 26px;
+}
+
+.pricing .card .card-body .price span{
+    color: #999999;
+}
+.pricing .card .card-body .card-text{
+    padding: 35px 20px;
+    transition: 0.3s all ease-in-out;
+}
+
+.pricing .card .card-body .btn-order{
+    border: 1px solid #999999;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #0099cc;
+    transition: 0.3s all ease-in-out;
+}
+.pricing .card:hover .card-header h5, .pricing .card:hover .card-body p{
+    color: #0099cc;
+}
+.pricing .card:hover .card-body .price, .pricing .card:hover .card-body .btn-order{
+    background-color: #0099cc;
+    color: #ffffff;
+}
+.pricing .card .card-body .price span{
+    color: #ffffff;
+}
+.pricing .card .card-header .active-text{
+    color: #0099cc;
+}
+.pricing .card .card-body .active-text{
+    color: #0099cc;
+}
+.pricing .card .card-body .active-background{
+    background-color: #0099cc;
+    color: #ffffff;
+}
+
+
+
+/*------------------------------------------------------------
+Contact
+-----------------------------------------------------------------*/
+.contact{
+    background-color: rgba(214, 214, 214, 0.71);
+    text-align: center;
+    padding-bottom: 16%;
+}
+.contact:hover .section-center-heading span::before, .contact:hover .section-center-heading span::after{
+    width: 47%;
+}
+.contact .section-center-heading{
+    margin-bottom: 30px;
+}
+.contact .contact-content i{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #0099cc;
+}
+.contact .contact-content span{
+    display: block;
+    width: 37%;
+    margin: auto;
+    color: #999999;
+}
+
+/*-----------------------------------------------------------------------------------------
+Map
+-------------------------------------------------------------------------------------------*/
+.map{
+    position: relative;
+    padding: 0;
+}
+
+.contact-form{
+    position: absolute;
+    background-color: #000018;
+    width: 50%;
+    padding: 50px 30px;
+    margin-top: 50px;
+    top: -59%;
+    left: 25%;
+}
+.contact-form form input{
+    display: block;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 1px solid #999999;
+    padding: 10px;
+    width: 100%;
+}
+.contact-form form textarea{
+    background: transparent;
+    border: 1px solid #999999;
+    padding: 10px;
+    width: 100%;
+}
+.contact-form form input:focus{
+    color: #999999;
+}
+.contact-form form textarea:focus{
+    color: #999999;
+}
+
+.contact-form form input::placeholder{
+    color: #999999;
+}
+.contact-form form textarea::placeholder{
+    color: #999999;
+}
+/*--------------------------------------------------------------------
+Footer
+-----------------------------------------------------------------------*/
+footer{
+    background-color: #000018;
+    text-align: center;
+    padding: 30px 0;
+    color: #999999;
+}
+footer a{
+    color: #999999;
+    transition: 0.3s all ease-in-out;
+}
+footer a:hover{
+    color: #0099cc;
+}
+
+footer i{
+    margin-left: 15px;
+}
+footer span{
+    display: block;
+}
+
+footer .active{
+    color: #0099cc;
+}

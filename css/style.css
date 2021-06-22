@@ -289,17 +289,18 @@ Testimonial
     font-size: 20px;
 }
 .testimonial .testimonial_slider .item .testomonial-person{
-    overflow: hidden;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
 }
 .testimonial .testimonial_slider .item .testomonial-person .image{
-    float: left;
-    width: 10%;
+    width: 20%;
+    border-radius: 50%;
+    overflow: hidden;
 }
-
-.testimonial .testimonial_slider .review{
-    float: right;
-    width: 85%;
-    margin-top: 10px;
+.testimonial .testimonial_slider .item .testomonial-person .review{
+    margin-top: 15px;
 }
 .testimonial .testimonial_slider .review h6{
     color: #ffffff;
@@ -307,6 +308,17 @@ Testimonial
 .testimonial .testimonial_slider .owl-carousel .item{
     margin-bottom: 100px;
 }
+.testimonial .owl-carousel .owl-dots .owl-dot span{
+    background: transparent;
+    border: 1px solid gray;
+}
+.testimonial .owl-carousel .owl-dots .active span{
+    background-color: gray;
+    height: 14px;
+    width: 14px;
+
+}
+
 
 /*-----------------------------------------------------------------
 add bar
@@ -479,7 +491,8 @@ Map
     padding: 50px 30px;
     margin-top: 50px;
     top: -59%;
-    left: 25%;
+    left: 50%;
+    transform: translate(-50%);
 }
 .contact-form form input{
     display: block;
@@ -497,9 +510,11 @@ Map
 }
 .contact-form form input:focus{
     color: #999999;
+    box-shadow: none;
 }
 .contact-form form textarea:focus{
     color: #999999;
+    box-shadow: none;
 }
 
 .contact-form form input::placeholder{

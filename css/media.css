@@ -24,7 +24,7 @@ Testimonial
     }
     .testimonial .testimonial_slider .item .testomonial-person{
         display: flex;
-        width: 53%;
+        width: 45%;
         justify-content: space-between;
     }
 

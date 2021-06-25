@@ -1,0 +1,314 @@
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /*=========================================
+              banner heading
+              ===========================================*/
+    .hg{
+        padding-top: 20px;
+    }
+    .hg .heading-text{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /*=========================================
+          banner heading
+          ===========================================*/
+    .hg{
+        padding-top: 20px;
+    }
+    .hg .heading-text{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 924px) and (max-width: 1024px) {
+    /*=========================================
+       banner heading
+       ===========================================*/
+    .hg{
+        padding-top: 20px;
+    }
+    .hg .heading-text{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 924px) and (orientation: landscape) {
+    /*=========================================
+        navbar
+        ===========================================*/
+    .navbar-light .navbar-nav .nav-item{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-link::before, .navbar-light .navbar-nav .nav-link::after{
+        bottom: -7px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .nav-link:hover::after{
+        width: 48%;
+    }
+    /*=========================================
+   banner heading
+   ===========================================*/
+    .hg{
+        padding-top: 20px;
+    }
+    .hg .heading-text{
+        margin-bottom: 15px;
+        width: 60%;
+    }
+    .hg .heading-text h4{
+        font-size: 18px;
+    }
+    .hg .heading-text h1{
+        font-size: 40px;
+    }
+    .hg .heading-text p{
+        font-size: 16px;
+    }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /*=========================================
+    navbar
+    ===========================================*/
+    .navbar-light .navbar-nav .nav-item{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-link::before, .navbar-light .navbar-nav .nav-link::after{
+        bottom: -7px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .nav-link:hover::after{
+        width: 48%;
+    }
+    /*=========================================
+   banner heading
+   ===========================================*/
+    .hg{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .hg .heading-text h4{
+        font-size: 18px;
+    }
+    .hg .heading-text h1{
+        font-size: 40px;
+    }
+    .hg .heading-text p{
+        font-size: 16px;
+    }
+    .hg .heading-text{
+        margin-bottom: 15px;
+    }
+    header .phone img{
+        display: none;
+    }
+
+    /*---------------------------------------------------------------
+beautiful_device
+-----------------------------------------------------------------*/
+    .beautiful_device{
+        text-align: center;
+        border-top: 1px solid #c2c2c2;
+    }
+
+    .beautiful_device .device-icon{
+        float: left;
+        width: 8%;
+        text-align: center;
+    }
+    .beautiful_device .device-icon-text{
+        float: right;
+        width: 88%;
+        text-align: left;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /*=========================================
+    navbar
+    ===========================================*/
+    .navbar-light .navbar-nav .nav-item{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-link::before, .navbar-light .navbar-nav .nav-link::after{
+        bottom: -7px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .nav-link:hover::after{
+        width: 48%;
+    }
+    /*=========================================
+   banner heading
+   ===========================================*/
+    .hg{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .hg .heading-text h4{
+        font-size: 18px;
+    }
+    .hg .heading-text h1{
+        font-size: 36px;
+    }
+    .hg .heading-text p{
+        font-size: 16px;
+    }
+    .hg .heading-text .btn-download{
+        margin: 0;
+    }
+    .hg .heading-text .btn-features{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    header .phone img{
+        display: none;
+    }
+
+    /*---------------------------------------------------------------
+beautiful_device
+-----------------------------------------------------------------*/
+    .beautiful_device{
+       text-align: center;
+        border-top: 1px solid #c2c2c2;
+    }
+
+    .beautiful_device .device-icon{
+        float: left;
+        width: 8%;
+        text-align: center;
+    }
+    .beautiful_device .device-icon-text{
+        float: right;
+        width: 88%;
+        text-align: left;
+    }
+    /*----------------------------------------------------------------
+Supper easy customize
+-------------------------------------------------------------------*/
+    .super_easy{
+        text-align: center;
+    }
+
+    /*------------------------------------------------------------
+Testimonial
+-----------------------------------------------------------------*/
+    .testimonial {
+        text-align: center;
+    }
+    .testimonial .testimonial_slider{
+        padding: 20px 0 0;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person{
+        display: flex;
+        width: 68%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .image{
+        width: 20%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .review{
+        margin-top: 15px;
+        text-align: left;
+    }
+
+
+    /*-----------------------------------------------------------------
+    add bar
+    --------------------------------------------------------------------------*/
+    .add_bar .add_bar_content h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .add_bar .add_bar_content .add_btn{
+        display: block;
+        width: 88%;
+        margin: 20px auto;
+    }
+
+    /*------------------------------------------------------------
+    Contact
+    -----------------------------------------------------------------*/
+
+
+    .contact .section-center-heading{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content span{
+        width: 100%;
+    }
+/*-----------------------------------------------------------------------------------------
+    Map
+    -------------------------------------------------------------------------------------------*/
+    .map{
+        position: relative;
+        padding: 0;
+    }
+    .contact-form{
+        position: relative;
+        background-color: #000018;
+        width: 100%;
+        padding: 50px 30px;
+        margin-top: 0;
+    }
+    .contact-form form input:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
+    }
+    .contact-form form textarea:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
+    }
+}

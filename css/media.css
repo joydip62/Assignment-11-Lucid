@@ -522,7 +522,7 @@ Testimonial
         bottom: -7px;
     }
     .navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .nav-link:hover::after{
-        width: 48%;
+        width: 25%;
     }
     /*=========================================
    banner heading

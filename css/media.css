@@ -615,7 +615,9 @@ Testimonial
         display: inline-block;
         width: 75%;
         margin: 20px auto;
-
+    }
+  .add_bar .add_bar_content .add_btn .btn-feature{
+        width: 68%;
     }
     .add_bar .add_bar_content .add_btn .btn-download{
         margin: 15px 0;

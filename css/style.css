@@ -50,124 +50,136 @@ p{
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
-    transition: all 0.5s;
-    z-index: 997;
-    padding-right: 10%;
-    padding-left: 10%;
+header{
+    background: url(../img/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 90vh;
+    background-attachment: fixed;
 }
 
-#header.header-scrolled, #header.header-inner-pages {
-    background: rgba(40, 40, 40, 0.9);
+.navbar-light .navbar-nav .nav-item {
+    padding-left: 25px;
 }
-
-.navbar .navbar-brand{
-    color: #ffffff;
-}
-
-.navbar .main-menu .nav-item{
-    padding-left: 20px;
-}
-.navbar .main-menu .nav-link{
-    color: #ffffff;
+.navbar-light .navbar-nav .nav-link {
+    color: #fffefe;
+    font-weight: 600;
     position: relative;
     padding: 0;
+    font-size: 16px;
 }
-.navbar .main-menu .nav-link:hover{
-    color: #ffffff;
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fffefe;
 }
-.navbar .main-menu .nav-link:before{
+.navbar-light .navbar-nav .nav-link::before{
     content: '';
     position: absolute;
-    height: 2px;
     width: 0;
+    height: 2px;
+    background-color: #008ed6;
+    bottom: -10px;
     left: 0;
-    bottom: -7px;
-    background-color: #0099cc;
-    transition: .4s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
-.navbar .main-menu .nav-link:after{
+.navbar-light .navbar-nav .nav-link::after{
     content: '';
     position: absolute;
-    height: 2px;
     width: 0;
+    height: 2px;
+    background-color: #008ed6;
+    bottom: -10px;
     right: 0;
-    bottom: -7px;
-    background-color: #0099cc;
-    transition: .4s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
-.navbar .main-menu .nav-link:hover::before{
-    width: 45%;
-}
-.navbar .main-menu .nav-link:hover::after{
-    width: 45%;
-}
-.navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .nav-link:hover::after{
+    width: 46%;
 }
 
-.navbar .navbar-toggler {
-    border-color: rgb(255,102,203);
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
 }
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-    width: 100%;
-    height: 70vh;
-    background: url("../img/banner.png") top center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+.navbar-light .navbar-nav .nav-link:hover {
+    outline: none;
 }
-#hero .hero_content span{
-    color: #0099cc;
-    font-size: 18px;
+.navbar .navbar-toggler{
+    border-color: #515151;
+}
+.navbar .navbar-toggler i{
+    color:  #515151;
+    padding: 5px;
+}
+/*===========================================================================
+ banner heading
+ ============================================================================*/
+.heading-text{
+    color: #fff;
+}
+.heading-text h4{
+    color: #008ed6;
     text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
 }
-#hero .hero_content h1{
-    color: #ffffff;
-    margin: 20px 0;
+.heading-text h1{
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 24px;
 }
-#hero .hero_content p{
-    margin-bottom: 50px;
+.heading-text p{
+    color: #878787;
+    font-size: 22px;
+    padding-right: 20px;
+    margin-bottom: 59px;
 }
-#hero .hero_content .btn-download{
-    background-color: #0099cc;
-    color: #ffffff;
+.hg{
+    min-height: 90vh;
+    align-items: center;
+}
+.btn-download{
+    background: #008ed6;
+    color: #fff;
     text-transform: uppercase;
-    padding: 12px 18px;
-    border-radius: 5px;
-    transition: .5s ease;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .3s all ease-in-out;
+    padding: 16px 30px;
+    border: 2px solid #008ed6;
+    margin-right: 20px;
 }
-#hero .hero_content .btn-feature{
-    background-color: transparent;
-    border: 1px solid #999999;
-    color: #ffffff;
+.btn-download:hover{
+    color: #fff;
+    background: transparent;
+    border: 2px solid #454549;
+}
+.btn-features{
+    background: transparent;
+    color: #fff;
     text-transform: uppercase;
-    padding: 12px 18px;
-    margin-left: 10px;
-    border-radius: 5px;
-    transition: .5s ease;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .3s all ease-in-out;
+    letter-spacing: .5px;
+    padding: 16px 30px;
+    border: 2px solid #454549;
 }
-#hero .hero_content .btn-download:hover{
-    background-color: transparent;
-    border: 1px solid #999999;
-    color: #ffffff;
+.btn-features:hover{
+    color: #fff;
+    background: #008ed6;
+    border: 2px solid #008ed6;
 }
-#hero .hero_content .btn-feature:hover{
-    background-color: #0099cc;
-    color: #ffffff;
-}
-
-#hero .banner-phone{
+.phone{
     position: absolute;
     bottom: 0;
-    right: 10%;
+    left: 57%;
 }
-#hero .banner-phone img{
-    width: 110%;
+.phone img{
+    width: 100%;
 }
+
 /*--------------------------------------------------------------------------------------------
 amazing_features starts
 ----------------------------------------------------------------------------------------------*/
@@ -267,8 +279,6 @@ Testimonial
     width: 47%;
 }
 .testimonial {
-    width: 100%;
-    height: 60vh;
     background: url("../img/pricings_plans_banner.png") top center;
     background-size: cover;
     background-attachment: fixed;
@@ -281,12 +291,13 @@ Testimonial
     color: #ffffff;
 }
 .testimonial .testimonial_slider{
-    padding: 70px 0;
+    padding: 70px 0 0;
 }
 .testimonial .testimonial_slider .item p{
     margin-bottom: 20px;
     font-style: italic;
     font-size: 20px;
+    color: #e4e4e4;
 }
 .testimonial .testimonial_slider .item .testomonial-person{
     display: flex;
@@ -305,8 +316,11 @@ Testimonial
 .testimonial .testimonial_slider .review h6{
     color: #ffffff;
 }
-.testimonial .testimonial_slider .owl-carousel .item{
-    margin-bottom: 100px;
+.testimonial .owl-carousel .owl-nav{
+    display: none;
+}
+.testimonial .owl-carousel .owl-dots{
+    margin-top: 50px;
 }
 .testimonial .owl-carousel .owl-dots .owl-dot span{
     background: transparent;
@@ -471,7 +485,6 @@ Contact
 }
 .contact .contact-content span{
     display: block;
-    width: 37%;
     margin: auto;
     color: #999999;
 }
@@ -522,6 +535,9 @@ Map
 }
 .contact-form form textarea::placeholder{
     color: #999999;
+}
+.map p{
+    line-height: 0;
 }
 /*--------------------------------------------------------------------
 Footer

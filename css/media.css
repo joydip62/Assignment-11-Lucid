@@ -514,10 +514,14 @@ Testimonial
     /*=========================================
     navbar
     ===========================================*/
-    .navbar-light .navbar-nav .nav-item{
-        padding-top: 10px;
+    .navbar-light .navbar-nav{
         text-align: center;
     }
+  .navbar-light .navbar-nav .nav-link {
+        display: inline-block;
+        padding-top: 10px;
+    }
+  
     .navbar-light .navbar-nav .nav-link::before, .navbar-light .navbar-nav .nav-link::after{
         bottom: -7px;
     }

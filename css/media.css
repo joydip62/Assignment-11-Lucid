@@ -15,6 +15,26 @@
         margin-bottom: 15px;
         width: 100%;
     }
+
+    /*------------------------------------------------------------
+Testimonial
+-----------------------------------------------------------------*/
+    .testimonial .testimonial_slider .item > p{
+        width: 90%;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person{
+        display: flex;
+        width: 53%;
+        justify-content: space-between;
+    }
+
+    /*------------------------------------------------------------
+    Contact
+    -----------------------------------------------------------------*/
+
+    .contact{
+        padding-bottom: 20%;
+    }
 }
 
 /*
@@ -33,6 +53,39 @@
         margin-bottom: 15px;
         width: 100%;
     }
+
+    /*------------------------------------------------------------
+Testimonial
+-----------------------------------------------------------------*/
+
+    .testimonial .testimonial_slider{
+        padding: 20px 0 0;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person{
+        display: flex;
+        width: 61%;
+        justify-content: space-between;
+    }
+
+
+    /*-----------------------------------------------------------------
+add bar
+--------------------------------------------------------------------------*/
+    .add_bar .add_bar_content{
+        overflow: hidden;
+    }
+
+    .add_bar .add_bar_content h1{
+        float: left;
+        width: 64%;
+    }
+    /*------------------------------------------------------------
+    Contact
+    -----------------------------------------------------------------*/
+
+    .contact{
+        padding-bottom: 25%;
+    }
 }
 
 /*
@@ -40,16 +93,130 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 924px) and (max-width: 1024px) {
+@media (min-width: 925px) and (max-width: 1024px) {
     /*=========================================
-       banner heading
-       ===========================================*/
+         navbar
+         ===========================================*/
+    .navbar-light .navbar-nav .nav-item{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-link::before, .navbar-light .navbar-nav .nav-link::after{
+        bottom: -7px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .nav-link:hover::after{
+        width: 48%;
+    }
+    /*=========================================
+  banner heading
+  ===========================================*/
     .hg{
         padding-top: 20px;
     }
     .hg .heading-text{
         margin-bottom: 15px;
+        width: 60%;
+    }
+    .hg .heading-text h4{
+        font-size: 18px;
+    }
+    .hg .heading-text h1{
+        font-size: 40px;
+    }
+    .hg .heading-text p{
+        font-size: 16px;
+    }
+
+    /*------------------------------------------------------------
+Testimonial
+-----------------------------------------------------------------*/
+    .testimonial {
+        text-align: center;
+    }
+    .testimonial .testimonial_slider{
+        padding: 20px 0 0;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person{
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .image{
+        width: 20%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .review{
+        margin-top: 15px;
+        text-align: left;
+    }
+
+
+    /*-----------------------------------------------------------------
+    add bar
+    --------------------------------------------------------------------------*/
+    .add_bar .add_bar_content h1{
+        display: block;
         width: 100%;
+        text-align: center;
+    }
+    .add_bar .add_bar_content .add_btn{
+        display: inline-block;
+        width: 75%;
+        margin: 20px auto;
+
+    }
+    .add_bar .add_bar_content .add_btn .btn-download{
+        margin: 15px 0;
+    }
+    .add_bar .add_bar_content .add_btn .btn-feature{
+        margin-right: 10px;
+    }
+
+    /*------------------------------------------------------------
+    Contact
+    -----------------------------------------------------------------*/
+
+
+    .contact{
+        padding-bottom: 30%;
+    }
+    .contact .section-center-heading{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content span{
+        width: 100%;
+    }
+    /*-----------------------------------------------------------------------------------------
+        Map
+        -------------------------------------------------------------------------------------------*/
+    .map{
+        position: relative;
+        padding: 0;
+    }
+    .contact-form{
+        position: absolute;
+        background-color: #000018;
+        width: 70%;
+        padding: 50px 30px;
+        margin-top: 70px;
+    }
+    .contact-form form input:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
+    }
+    .contact-form form textarea:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
     }
 
 }
@@ -93,6 +260,97 @@
         font-size: 16px;
     }
 
+    /*------------------------------------------------------------
+Testimonial
+-----------------------------------------------------------------*/
+    .testimonial {
+        text-align: center;
+    }
+    .testimonial .testimonial_slider{
+        padding: 20px 0 0;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person{
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .image{
+        width: 20%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .review{
+        margin-top: 15px;
+        text-align: left;
+    }
+
+
+    /*-----------------------------------------------------------------
+    add bar
+    --------------------------------------------------------------------------*/
+    .add_bar .add_bar_content h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .add_bar .add_bar_content .add_btn{
+        display: inline-block;
+        width: 75%;
+        margin: 20px auto;
+
+    }
+    .add_bar .add_bar_content .add_btn .btn-download{
+        margin: 15px 0;
+    }
+    .add_bar .add_bar_content .add_btn .btn-feature{
+        margin-right: 10px;
+    }
+
+    /*------------------------------------------------------------
+    Contact
+    -----------------------------------------------------------------*/
+
+
+    .contact{
+        padding-bottom: 30%;
+    }
+    .contact .section-center-heading{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content span{
+        width: 100%;
+    }
+    /*-----------------------------------------------------------------------------------------
+        Map
+        -------------------------------------------------------------------------------------------*/
+    .map{
+        position: relative;
+        padding: 0;
+    }
+    .contact-form{
+        position: absolute;
+        background-color: #000018;
+        width: 70%;
+        padding: 50px 30px;
+        margin-top: 70px;
+    }
+    .contact-form form input:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
+    }
+    .contact-form form textarea:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
+    }
 }
 
 /*
@@ -155,6 +413,94 @@ beautiful_device
         float: right;
         width: 88%;
         text-align: left;
+    }
+    /*------------------------------------------------------------
+Testimonial
+-----------------------------------------------------------------*/
+    .testimonial {
+        text-align: center;
+    }
+    .testimonial .testimonial_slider{
+        padding: 20px 0 0;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person{
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .image{
+        width: 20%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .testimonial .testimonial_slider .item .testomonial-person .review{
+        margin-top: 15px;
+        text-align: left;
+    }
+
+
+    /*-----------------------------------------------------------------
+    add bar
+    --------------------------------------------------------------------------*/
+    .add_bar .add_bar_content h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .add_bar .add_bar_content .add_btn{
+        display: inline-block;
+        width: 75%;
+        margin: 20px auto;
+
+    }
+    .add_bar .add_bar_content .add_btn .btn-download{
+        margin: 15px 0;
+    }
+    .add_bar .add_bar_content .add_btn .btn-feature{
+       margin-right: 10px;
+    }
+
+    /*------------------------------------------------------------
+    Contact
+    -----------------------------------------------------------------*/
+
+
+    .contact .section-center-heading{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content{
+        margin-bottom: 30px;
+    }
+    .contact .contact-content span{
+        width: 100%;
+    }
+    /*-----------------------------------------------------------------------------------------
+        Map
+        -------------------------------------------------------------------------------------------*/
+    .map{
+        position: relative;
+        padding: 0;
+    }
+    .contact-form{
+        position: relative;
+        background-color: #000018;
+        width: 100%;
+        padding: 50px 30px;
+        margin-top: 0;
+    }
+    .contact-form form input:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
+    }
+    .contact-form form textarea:focus{
+        outline: none !important;
+        border:1px solid #999999;
+        box-shadow: none;
+
     }
 
 }
@@ -241,7 +587,7 @@ Testimonial
     }
     .testimonial .testimonial_slider .item .testomonial-person{
         display: flex;
-        width: 68%;
+        width: 85%;
         justify-content: space-between;
         align-items: center;
         margin: auto;
@@ -266,10 +612,17 @@ Testimonial
         text-align: center;
     }
     .add_bar .add_bar_content .add_btn{
-        display: block;
-        width: 88%;
+        display: inline-block;
+        width: 75%;
         margin: 20px auto;
+
     }
+    .add_bar .add_bar_content .add_btn .btn-download{
+        margin: 15px 0;
+    }
+
+
+
 
     /*------------------------------------------------------------
     Contact
